@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "839671809720",
+    "firebase_url": "https://tt-angular-arno.firebaseio.com",
+    "project_id": "tt-angular-arno",
+    "storage_bucket": "tt-angular-arno.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839671809720:android:aedc53c6d99d60ff",
+        "android_client_info": {
+          "package_name": "com.example.hellofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839671809720-sumgu5hmu4gc4ch07u72rt48uvk9oepr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPpI-d-8xQ8gkHx0p_CYZIovD-coJuND8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
