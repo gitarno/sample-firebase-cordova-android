@@ -17,7 +17,6 @@
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-firebase-analytics": {},
             "cordova-plugin-whitelist": {}
         },
         "platforms": [
