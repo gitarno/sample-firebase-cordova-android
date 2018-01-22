@@ -24,4 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-plugin-firebase" spec="^0.1.20" />
 </widget>
