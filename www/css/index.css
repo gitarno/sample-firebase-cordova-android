@@ -48,10 +48,10 @@ body {
 /* Portrait layout (default) */
 .app {
     position: absolute;
-    height: 50px;
-    width: 96%;
+    height: auto;
+    width: 90%;
     text-align: center;
-    padding: 2%;
+    padding: 5%;
 }
 
 h1 {
@@ -98,14 +98,46 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
-
-
+#deviceready {
+    margin: 15px 0px;
+}
 button {
-    border: 1px solid #501e50;
+    border: 1.3px solid #501e50;
     padding: 15px 40px;
     border-radius: 50px;
     margin: 5px;
     text-transform: uppercase;
     color: #501e50;
     font-size: 14px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+button:hover,
+button:focus {
+    animation:UP 300ms 1;
+    -webkit-animation:UP 300ms 1;
+}
+
+@keyframes UP {
+    from { 
+        transform: scale(1);
+    }
+    50% { 
+        transform: scale(1.1);
+    }
+    to { 
+        transform: scale(1);
+    }
+}
+ 
+@-webkit-keyframes UP {
+    from { 
+        -webkit-transform: scale(1);
+    }
+    50% { 
+        -webkit-transform: scale(1.2);
+    }
+    to { 
+        -webkit-transform: scale(1);
+    }
 }

@@ -18,7 +18,7 @@
  */
 
 var app = {
-    version: "1.0.0.3",
+    version: "1.0.0.4",
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -29,7 +29,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        window.FirebasePlugin.setUserId("ARNO" +"_"+ id);
+        window.FirebasePlugin.setUserId("ARNO" + "_");
         document.getElementById("version").innerHTML = app.version;
         window.FirebasePlugin.logEvent("onDeviceReady", {
             content_type: "page_view", 
