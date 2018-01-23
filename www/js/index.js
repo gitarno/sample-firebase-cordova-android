@@ -31,6 +31,12 @@ var app = {
     onDeviceReady: function() {
         document.getElementById("version").innerHTML = app.version;
         this.receivedEvent('deviceready');
+        
+        window.FirebasePlugin.logEvent("onDeviceReady", {
+            content_type: "page_view", 
+            item_id: "home"
+        });
+
     },
 
     // Update DOM on a Received Event
