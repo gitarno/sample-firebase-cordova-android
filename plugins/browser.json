@@ -15,6 +15,9 @@
     },
     "cordova-plugin-firebase-analytics": {
       "PACKAGE_NAME": "com.example.hellofirebase"
+    },
+    "cordova-google-api-version": {
+      "PACKAGE_NAME": "com.example.hellofirebase"
     }
   },
   "dependent_plugins": {}

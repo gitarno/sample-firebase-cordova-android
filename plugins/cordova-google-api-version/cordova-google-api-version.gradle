@@ -1,0 +1,27 @@
+repositories{    
+  // Google APIs 11.2.* are now hosted at Maven
+  maven {
+    url 'https://maven.google.com'
+  }
+}
+
+def PLUGIN_NAME = "cordova-google-api-version"
+
+// Fetch GOOGLE_API_VERSION var from properties.gradle
+apply from: PLUGIN_NAME + '/properties.gradle'
+
+// List of play-services libs to search for.
+def GOOGLE_APIS = [
+    'com.google.android.gms',
+    'com.google.firebase'
+]
+
+println("+-----------------------------------------------------------------");
+println("| " + PLUGIN_NAME + ": " + GOOGLE_API_VERSION);
+println("+-----------------------------------------------------------------");
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group in GOOGLE_APIS) { details.useVersion GOOGLE_API_VERSION }
+    }
+}

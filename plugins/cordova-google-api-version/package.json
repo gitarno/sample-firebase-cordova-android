@@ -1,0 +1,39 @@
+{
+  "_from": "cordova-google-api-version",
+  "_id": "cordova-google-api-version@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-8qWjx8/w/sKKsMahtW5ZCn4MAeQ=",
+  "_location": "/cordova-google-api-version",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-google-api-version",
+    "name": "cordova-google-api-version",
+    "escapedName": "cordova-google-api-version",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-google-api-version/-/cordova-google-api-version-0.0.1.tgz",
+  "_shasum": "f2a5a3c7cff0fec28ab0c6a1b56e590a7e0c01e4",
+  "_spec": "cordova-google-api-version",
+  "_where": "/Users/arnoroldaojunior/Documents/hello",
+  "author": {
+    "name": "Chris Scott, Transistor Software"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "xml2js": "~0.4.19"
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to solve Google API version conflicts by pining a desired version for all Google APIs (eg: play-services, firebase)",
+  "devDependencies": {},
+  "license": "MIT",
+  "name": "cordova-google-api-version",
+  "version": "0.0.1"
+}
