@@ -18,7 +18,7 @@
  */
 
 var app = {
-    version: "1.0.0.2",
+    version: "1.0.0.3",
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
