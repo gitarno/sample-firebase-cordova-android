@@ -18,7 +18,7 @@
  */
 
 var app = {
-    version: "1.0.0.1",
+    version: "1.0.0.2",
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -29,26 +29,22 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        window.FirebasePlugin.setUserId("ARNO" +"_"+ id);
         document.getElementById("version").innerHTML = app.version;
-        this.receivedEvent('deviceready');
-        
         window.FirebasePlugin.logEvent("onDeviceReady", {
             content_type: "page_view", 
             item_id: "home"
         });
-
+        this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        window.FirebasePlugin.setUserId("ARNO" +"_"+ id);
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
     }
 };
