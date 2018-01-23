@@ -32,6 +32,7 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        window.FirebasePlugin.setUserId("ARNO" +"_"+ id);
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
