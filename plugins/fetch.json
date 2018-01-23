@@ -14,5 +14,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-firebase-analytics": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebase-analytics@^0.12.1"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

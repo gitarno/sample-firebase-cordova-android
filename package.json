@@ -20,7 +20,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-firebase": {}
+            "cordova-plugin-firebase": {},
+            "cordova-plugin-firebase-analytics": {}
         },
         "platforms": [
             "android",
