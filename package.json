@@ -19,7 +19,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-firebase": {}
+            "cordova-plugin-firebase": {},
+            "cordova-support-google-services": {}
         },
         "platforms": [
             "android",
