@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "839671809720",
-    "firebase_url": "https://tt-angular-arno.firebaseio.com",
-    "project_id": "tt-angular-arno",
-    "storage_bucket": "tt-angular-arno.appspot.com"
+    "project_number": "1002912405373",
+    "firebase_url": "https://sample-test-ac156.firebaseio.com",
+    "project_id": "sample-test-ac156",
+    "storage_bucket": "sample-test-ac156.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:839671809720:android:aedc53c6d99d60ff",
+        "mobilesdk_app_id": "1:1002912405373:android:69e582e1f4767055",
         "android_client_info": {
-          "package_name": "com.example.hellofirebase"
+          "package_name": "br.com.examplesampleandroid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "839671809720-sumgu5hmu4gc4ch07u72rt48uvk9oepr.apps.googleusercontent.com",
+          "client_id": "1002912405373-qm2ag9a1pqblq5mo726k1lpldj9tcac9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDPpI-d-8xQ8gkHx0p_CYZIovD-coJuND8"
+          "current_key": "AIzaSyAAqOwwuHVrTiKOaH9KAGZIvbLoYM__T_w"
         }
       ],
       "services": {
