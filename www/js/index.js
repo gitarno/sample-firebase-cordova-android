@@ -20,17 +20,16 @@
 
 var app = {
     version: "1.0.0.4",
+    config:{
+        apiKey: "AIzaSyAbu7LjSNWG1vp7U2PDOAlCwAck_iEzpO0",
+        authDomain: "sample-test-ac156.firebaseapp.com",
+        databaseURL: "https://sample-test-ac156.firebaseio.com",
+        projectId: "sample-test-ac156",
+        storageBucket: "sample-test-ac156.appspot.com",
+        messagingSenderId: "1002912405373"
+    },
     // Application Constructor
     initialize: function () {
-        var config = {
-            apiKey: "AIzaSyAbu7LjSNWG1vp7U2PDOAlCwAck_iEzpO0",
-            authDomain: "sample-test-ac156.firebaseapp.com",
-            databaseURL: "https://sample-test-ac156.firebaseio.com",
-            projectId: "sample-test-ac156",
-            storageBucket: "sample-test-ac156.appspot.com",
-            messagingSenderId: "1002912405373"
-        };
-        firebase.initializeApp(config);
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -39,12 +38,8 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function () {
-        window.FirebasePlugin.setUserId("ARNO" + "_");
         document.getElementById("version").innerHTML = app.version;
-        window.FirebasePlugin.logEvent("onDeviceReady", {
-            content_type: "page_view",
-            item_id: "home"
-        });
+        firebase.initializeApp(app.config);
         this.receivedEvent('deviceready');
     },
 
